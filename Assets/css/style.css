@@ -1,0 +1,185 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Global colors */
+:root {
+    --bg-color: #121214;
+    --purple: #8F37ED;
+    --text: #e1e1e6;
+    --bg-box: #121214;
+    --green: #00DD57;
+}
+
+/* General configs */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+}
+
+
+/* CSS Banner */
+main {
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100vh;
+    /* Utilizar a barra ao adicionar uma imagem */
+    background: url("/Assets/images/rocket-background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+main h1 {
+    color: white;
+    font-size: 56px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+#hello {
+    color: #04d361;
+    font-size: 18px;    
+    margin-bottom: 10px;
+}
+
+#hello span {
+    margin-right: 5px;
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;       
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
+main p {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--text);
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    width: 250px;
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    margin-top: -150px;
+}
+
+.projects .box,
+.projects-2 .box {
+    padding: 50px;
+    background-color: var(--bg-box);
+    margin: 10px;
+    border: 2px solid #29292E;
+    border-radius: 15px;
+}
+
+.projects .box h2,
+.projects-2 .box h2 {
+    color: #A000F6;
+}
+
+.projects .box p,
+.projects-2 .box p {
+    color: var(--text);
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.projects .box a,
+.projects-2 .box a  {
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: var(--purple);
+    color: white;
+    border-radius: 25px;
+    border: 2px solid #A000F5;
+    transition: all 0.5s;
+}
+
+.projects .box a:hover,
+.projects-2 .box a:hover {
+    background-color: #121214;
+    border: 2px solid #A000F5;
+    color: #A000F5;
+}
+
+/* Projects 2 */
+.projects-2 {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    margin-top: 0px;
+    padding-bottom: 60px;
+}
+
+/* Portfolio */
+.portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 1200px;
+    padding: 100px 50px;
+}
+
+.portfolio div {
+    width: 50%;
+}
+
+.portfolio .content {
+    padding: 50px;
+}
+
+.portfolio .content h2 {
+    color: white;
+    font-size: 48px;
+    line-height: 54px;
+}
+
+.portfolio .content p {
+    color: var(--text);
+    margin: 20px 0;
+    line-height: 26px;
+    margin-bottom: 50px;
+}
+
+.portfolio .content a {
+    padding: 15px 30px;
+    background-color: #121214;
+    border: 2px solid #A000F5;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
