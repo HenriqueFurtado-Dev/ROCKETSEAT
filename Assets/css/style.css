@@ -174,12 +174,17 @@ main p {
 }
 
 .portfolio .content a {
-    padding: 15px 30px;
+    padding: 20px 60px;
     background-color: #121214;
     border: 2px solid #A000F5;
     text-decoration: none;
     border-radius: 5px;
     color: white;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.text-green {
+    color: var(--green);
 }
