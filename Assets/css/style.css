@@ -174,17 +174,88 @@ main p {
 }
 
 .portfolio .content a {
-    padding: 20px 60px;
+    padding: 15px 30px;
     background-color: #121214;
     border: 2px solid #A000F5;
     text-decoration: none;
     border-radius: 5px;
     color: white;
     font-weight: 600;
+    font-size: 20px;
+}
+
+
+/* CTA */
+.cta {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding: 50px 20%;
+    background: url("/Assets/images/background-blue-lines.svg");
+}
+
+.cta div {
+    margin: 20px;
+    flex: 1;
+}
+
+.cta .content {
+    text-align: left;
+}
+
+.cta .content h3 {
+    font-size: 48px;
+    line-height: 54px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cta .content ul {
+    color: var(--text);
     font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.cta .content a {
+    padding: 20px 40px;
+    background-color: #1A1B4C;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
-.text-green {
-    color: var(--green);
+/* About */
+.about {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding: 100px 20%;
+}
+
+.about div {
+    margin: 20px;
+    flex: 1;
+}
+
+.about .content {
+    text-align: left;
+}
+
+.about .content h2 {
+    font-size: 48px;
+    line-height: 54px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about .content p {
+    color: var(--text);
 }
