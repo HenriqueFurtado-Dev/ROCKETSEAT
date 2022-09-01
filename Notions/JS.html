@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="shortcut icon" href="/Assets/images/Rocket-favicon.png" type="image/x-icon">
+
+</head>
+<body>
+    <script>
+
+        // Agrupando variaveis 
+        let age, name
+
+        age = 20
+        name = "Carlos"
+
+        console.log(`O ${name} tem ${age} anos`)
+
+
+        /* Criando um objeto - 
+            variavel utiliza :
+            utiliza =
+        */ 
+        const person = {
+            nome: "Henrique",
+            idade : 90,
+            weight : 1.86,
+            isAdmin : true
+        }
+
+        // Objeto vazio
+        const empty = {}
+
+        console.log(person.idade)
+
+
+        // Criando um array
+        const animals = [
+            'Lion',
+            'monkey',
+            'tiger',
+            'cat',
+            {
+                name: 'bird',
+                age: 5
+            }
+        ]
+
+        // Puxando valor do array
+        console.log(animals[0])
+
+        // puxando objeto dentro do array
+        console.log(animals[4].name)
+
+
+        // ----------- EXERCICIOS -----------
+        let weight 
+
+        console.log(typeof weight)
+
+        let nome, idade, estrelas, sub
+
+        nome = 'Carlos'
+        idade = 20
+        estrelas = 4.5
+        sub = true
+
+
+    </script>
+    <script src="./functions.js"></script>
+</body>
+</html>
